@@ -2,7 +2,6 @@ import 'package:flutter_map_location_marker/flutter_map_location_marker.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
-import 'package:flutter_map_cancellable_tile_provider/flutter_map_cancellable_tile_provider.dart';
 import 'package:flutter_map_animations/flutter_map_animations.dart';
 import 'location_provider.dart';
 
@@ -13,9 +12,6 @@ class MapProvider extends ChangeNotifier {
   /// URL for the raster tile server
   final rasterTileURL =
       'https://jeius.github.io/MSUIIT_raster_tiles/tile/{z}/{x}/{y}.png';
-
-  /// Tile provider to handle the fetching of raster tiles from the URL
-  final tileProvider = CancellableNetworkTileProvider();
 
   /// LatLng bounds to constraint the map camera view
   final LatLngBounds bounds = LatLngBounds(

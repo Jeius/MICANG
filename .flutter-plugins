@@ -2,11 +2,10 @@
 appkit_ui_element_colors=/home/jeius/.pub-cache/hosted/pub.dev/appkit_ui_element_colors-1.0.0/
 dynamic_color=/home/jeius/.pub-cache/hosted/pub.dev/dynamic_color-1.7.0/
 flutter_compass=/home/jeius/.pub-cache/hosted/pub.dev/flutter_compass-0.8.0/
-flutter_native_splash=/home/jeius/.pub-cache/hosted/pub.dev/flutter_native_splash-2.4.0/
-geolocator=/home/jeius/.pub-cache/hosted/pub.dev/geolocator-11.0.0/
-geolocator_android=/home/jeius/.pub-cache/hosted/pub.dev/geolocator_android-4.5.4/
+geolocator=/home/jeius/.pub-cache/hosted/pub.dev/geolocator-12.0.0/
+geolocator_android=/home/jeius/.pub-cache/hosted/pub.dev/geolocator_android-4.6.0/
 geolocator_apple=/home/jeius/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.7/
-geolocator_web=/home/jeius/.pub-cache/hosted/pub.dev/geolocator_web-3.0.0/
+geolocator_web=/home/jeius/.pub-cache/hosted/pub.dev/geolocator_web-4.0.0/
 geolocator_windows=/home/jeius/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.3/
-macos_ui=/home/jeius/.pub-cache/hosted/pub.dev/macos_ui-2.0.5/
+macos_ui=/home/jeius/.pub-cache/hosted/pub.dev/macos_ui-2.0.7/
 macos_window_utils=/home/jeius/.pub-cache/hosted/pub.dev/macos_window_utils-1.5.0/

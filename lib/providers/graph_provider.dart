@@ -53,7 +53,8 @@ class GraphProvider extends ChangeNotifier {
     GraphBuilder.buildGraph(isWalking, dataProvider, endNode);
   }
 
-  Future<List<Polyline>> findPath(Position? position, {
+  Future<List<Polyline>> findPath(
+    Position? position, {
     required INode? start,
     required INode? end,
   }) async {
@@ -146,7 +147,7 @@ class GraphProvider extends ChangeNotifier {
       borderColor: const Color(0xFF4EC0F9),
       strokeWidth: 10,
       borderStrokeWidth: 2,
-      isDotted: true,
+      pattern: const StrokePattern.dotted(),
     );
 
     return [pathLine, indoorLine];

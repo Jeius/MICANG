@@ -30,28 +30,30 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_map: ^6.1.0
+  flutter_map: ^7.0.0
   latlong2: ^0.9.0
-  geolocator: ^11.0.0
+  geolocator: ^12.0.0
   provider: ^6.1.2
-  flutter_map_cancellable_tile_provider: ^2.0.0
   google_nav_bar: ^5.0.6
-  flutter_map_location_marker: ^8.0.5
-  flutter_map_animations: ^0.6.0
+  flutter_map_location_marker: ^8.0.8
+  flutter_map_animations: ^0.7.0
   http: any
   glass: ^2.0.0+1
   loading_animation_widget: ^1.2.1
-  flutter_native_splash: ^2.4.0
   adaptive_dialog: ^2.1.0
 
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+dependency_overrides:
+  flutter_map: ^7.0.0
+  geolocator: ^12.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.1
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -78,14 +80,5 @@ flutter:
       fonts:
         - asset: fonts/CustomIcons.ttf
 
-flutter_native_splash:
-  # This package generates native code to customize Flutter's default white native splash screen
-  # with background color and splash image.
-  # Customize the parameters below, and run the following command in the terminal:
-  # dart run flutter_native_splash:create
-  # To restore Flutter's default white splash screen, run the following command in the terminal:
-  # dart run flutter_native_splash:remove
 
-  color: "#d0d0ce"
-  color_dark: "#d0d0ce"
 

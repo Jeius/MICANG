@@ -75,7 +75,7 @@ class BinaryHeap<E> {
 
   void bubbleUp(int i) {
     while (i > 1) {
-      if (comparator(array[i]!, array[i ~/ 2]!) >= 0) break;
+      if (comparator(array[i] as E, array[i ~/ 2] as E) >= 0) break;
       E? obj = array[i];
       array[i] = array[i ~/ 2];
       array[i ~/ 2] = obj;
@@ -88,14 +88,14 @@ class BinaryHeap<E> {
     while (true) {
       int i2 = i1;
       if (i2 * 2 + 1 <= _size) {
-        if (comparator(array[i2]!, array[i2 * 2]!) > 0) {
+        if (comparator(array[i2] as E, array[i2 * 2] as E) > 0) {
           i1 = i2 * 2;
         }
-        if (comparator(array[i1]!, array[i2 * 2 + 1]!) > 0) {
+        if (comparator(array[i1] as E, array[i2 * 2 + 1] as E) > 0) {
           i1 = i2 * 2 + 1;
         }
       } else if (i2 * 2 <= _size) {
-        if (comparator(array[i1]!, array[i2 * 2]!) > 0) {
+        if (comparator(array[i1] as E, array[i2 * 2] as E) > 0) {
           i1 = i2 * 2;
         }
       }
