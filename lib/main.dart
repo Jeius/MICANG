@@ -36,8 +36,6 @@ class MyApp extends StatelessWidget {
         secondary: const Color(0xFF1E1F22),
         onPrimary: const Color(0xFFFFFFFF),
         onSecondary: const Color(0xFFFFFFFF),
-        background: const Color(0xFF447AAB),
-        onBackground: const Color(0xFFFFFFFF),
         primaryContainer: const Color(0xFF1E1F22).withOpacity(0.8),
         onPrimaryContainer: const Color(0xFFFFFFFF),
         secondaryContainer: const Color(0xFF515151).withOpacity(0.7),

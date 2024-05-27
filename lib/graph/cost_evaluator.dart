@@ -15,11 +15,4 @@ class CostEvaluator implements ICostEvaluator {
   double evaluateHeuristic(INode node, INode end) {
     return MathUtils().getDistance(node.getCoordinates(), end.getCoordinates());
   }
-
-  @override
-  int evaluateWeight(IEdge edge) {
-    // TODO: implement evaluateWeight
-    throw UnimplementedError();
-  }
-
 }

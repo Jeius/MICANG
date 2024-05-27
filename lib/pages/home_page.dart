@@ -25,8 +25,7 @@ class HomePage extends StatelessWidget {
     return Consumer<PageProvider>(
       builder: (context, page, __) {
         return Scaffold(
-          backgroundColor:
-              Theme.of(context).colorScheme.background.withOpacity(0.8),
+          backgroundColor: Theme.of(context).splashColor,
           resizeToAvoidBottomInset: false,
           extendBody: true,
           drawer: const LegendWidget(),
@@ -41,21 +40,22 @@ class HomePage extends StatelessWidget {
                   children: [
                     const NorthButton(),
                     const SizedBox(height: 20),
-                    Builder(
-                      builder: (context) {
-                        return Container(
-                          width: 40,
-                          height: 40,
-                          color: Theme.of(context).colorScheme.primaryContainer,
-                          child: FloatingActionButton(
-                            backgroundColor: Colors.transparent,
-                            mini: true,
-                            onPressed: () => Scaffold.of(context).openDrawer(),
-                            child: const Icon(Icons.info_outlined, size: 20,),
+                    Builder(builder: (context) {
+                      return Container(
+                        width: 40,
+                        height: 40,
+                        color: Theme.of(context).colorScheme.primaryContainer,
+                        child: FloatingActionButton(
+                          backgroundColor: Colors.transparent,
+                          mini: true,
+                          onPressed: () => Scaffold.of(context).openDrawer(),
+                          child: const Icon(
+                            Icons.info_outlined,
+                            size: 20,
                           ),
-                        ).asGlass(clipBorderRadius: BorderRadius.circular(20));
-                      }
-                    ),
+                        ),
+                      ).asGlass(clipBorderRadius: BorderRadius.circular(20));
+                    }),
                     const SizedBox(height: 20),
                     const LocationButton(),
                   ],

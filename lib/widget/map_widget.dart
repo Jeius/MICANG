@@ -45,8 +45,8 @@ class _MapWidgetState extends State<MapWidget> with TickerProviderStateMixin {
           bounds: mapProvider.bounds,
         ),
         initialZoom: 17,
-        maxZoom: 19,
-        minZoom: 14, //17
+        maxZoom: 22,
+        minZoom: 13, 
         backgroundColor: Colors.transparent,
         onPositionChanged: (_, hasGesture) =>
             mapProvider.onPositionChanged(hasGesture),
@@ -74,10 +74,11 @@ class RasterTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final mapProvider = Provider.of<MapProvider>(context, listen: false);
     return TileLayer(
-      tileProvider: mapProvider.tileProvider,
+      tileProvider: NetworkTileProvider(),
       urlTemplate: mapProvider.rasterTileURL,
-      maxZoom: 23,
-      minZoom: 12, //17
+      maxNativeZoom: 22,
+      minNativeZoom: 13, 
+      tileBounds: mapProvider.bounds,
     );
   }
 }
