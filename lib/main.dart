@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
 
   ThemeData theme() {
     return ThemeData(
-      splashColor: const Color(0xFF797878),
+      splashColor: const Color(0xFFd0d0ce),
       hoverColor: const Color(0xFF797878).withOpacity(0.7),
       colorScheme: ColorScheme.fromSeed(
         seedColor: const Color(0xFF000000),
